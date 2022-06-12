@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="static/style/style.css">
+
+  <title>Gra papier kamień nożyczki</title>
+</head>
+<body>
+  <h1>Game "Paper, Stone, Scissors"</h1>
+  <div class="select">
+    <h2>Choose from one of the three options:</h2>
+    <img data-option="paper" class="paper" src="static/img/paper.jpg" alt="" title="paper">
+    <img data-option="stone" class="stone" src="static/img/stone.jpg" alt="" title="stone">
+    <img data-option="scissors" class="scissors" src="static/img/scissors.jpg" alt="" title="scissors">
+  </div>
+  <button class="start">Start</button>
+
+  <div class="pannels">
+    <div class="pannel-left">
+      <h2>Wyniki gry</h2>
+      <p>Your choice:
+        <span data-summary="your-choice"></span>
+      </p>
+      <p>Computer choice:
+        <span data-summary="ai-choice"></span>
+      </p>
+      <h2>
+        Game winner:
+        <span data-summary="who-win"></span>
+      </h2>
+    </div>
+
+    <div class="pannel-right">
+      <h2>Curren results</h2>
+      <p class="numbers">
+        Number of games
+        <span>0</span>
+      </p>
+      <p class="wins">
+        Wins
+        <span>0</span>
+      </p>
+      <p class="losses">
+        Losses
+        <span>0</span>
+      </p>
+      <p class="draws">
+        Draws
+        <span>0</span>
+      </p>
+    </div>
+  </div>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
